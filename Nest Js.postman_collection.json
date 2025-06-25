@@ -1,0 +1,798 @@
+{
+	"info": {
+		"_postman_id": "ccd70e7f-6747-4579-bd38-46b61cdcb020",
+		"name": "Nest Js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36736808",
+		"_collection_link": "https://iz-dev.postman.co/workspace/My-Workspace~a819702f-2876-4a2f-8b14-e74fb77c2d2f/collection/36736808-ccd70e7f-6747-4579-bd38-46b61cdcb020?action=share&source=collection_link&creator=36736808"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "http://localhost:3000/category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Category 1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Category Description 1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/category/8",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/category/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/category/10",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/category/delete-category/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"delete-category",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/category/update-category/10",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Category 1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Category Description 10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/category/update-category/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"category",
+								"update-category",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Auth",
+			"item": [
+				{
+					"name": "http://localhost:3000/auth/addUsers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Kamran 1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "rana.kamran@invozone.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "zxcvbnm",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/addUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"addUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/auth/all-user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTBmYjUwZmJjNTFlYjEwMDM4MzEwNSIsImlhdCI6MTcyMTg5Njk4MiwiZXhwIjoxNzIxOTAwNTgyfQ.VoGLnEvCb2qTCYFnraV95qhRibuXv1TsfGvs7Yv-nYQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/auth/all-user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"all-user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/auth/user/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/auth/delete/3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/auth/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/auth/update-profile/4",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Kamran update",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/update-profile/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"update-profile",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/auth/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "rana.kamran@invozone.dev",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "zxcvbnm",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1234",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/auth/update-password",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTBmYjUwZmJjNTFlYjEwMDM4MzEwNSIsImlhdCI6MTcyMTg5OTA4NiwiZXhwIjoxNzIxOTAyNjg2fQ.Lt_fAHxyqanFDosnOMmfo6Sc2CyVRLYtO2DL5WER7R8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "oldPassword",
+									"value": "zxcvbnm",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "newPassword",
+									"value": "1234",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "oldPassword",
+									"value": "1234",
+									"type": "text"
+								},
+								{
+									"key": "newPassword",
+									"value": "zxcvbnm",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/update-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"update-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/auth/forgot-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "rana.kamran@invozone.dev",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/forgot-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/auth/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTBmYjUwZmJjNTFlYjEwMDM4MzEwNSIsImtleSI6InBhc3N3b3JkLXJlc2V0IiwiaWF0IjoxNzIxOTEyNzk5LCJleHAiOjE3MjE5MTYzOTl9.lNLwf2b8oSC8IHZHtoXJXLGsbN6TgL58Q032aT51X4Q",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "newPassword",
+									"value": "zxcvbnm",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/reset-password?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTBmYjUwZmJjNTFlYjEwMDM4MzEwNSIsImtleSI6InBhc3N3b3JkLXJlc2V0IiwiaWF0IjoxNzIxOTEyNzk5LCJleHAiOjE3MjE5MTYzOTl9.lNLwf2b8oSC8IHZHtoXJXLGsbN6TgL58Q032aT51X4Q",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"reset-password"
+							],
+							"query": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTBmYjUwZmJjNTFlYjEwMDM4MzEwNSIsImtleSI6InBhc3N3b3JkLXJlc2V0IiwiaWF0IjoxNzIxOTEyNzk5LCJleHAiOjE3MjE5MTYzOTl9.lNLwf2b8oSC8IHZHtoXJXLGsbN6TgL58Q032aT51X4Q"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "BlogPost",
+			"item": [
+				{
+					"name": "http://localhost:3000/blogpost",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTBmYjUwZmJjNTFlYjEwMDM4MzEwNSIsImlhdCI6MTcyMTk3NjM4OSwiZXhwIjoxNzIxOTc5OTg5fQ.F_Plt_cZ-VCo1f34Eh_BlLB3yUEZEEJEXlx0V0gpu_s",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Post 5",
+									"type": "text"
+								},
+								{
+									"key": "content",
+									"value": "Content 5",
+									"type": "text"
+								},
+								{
+									"key": "categoryId",
+									"value": "66a0e07c7964f7ba16632b92",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/blogpost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blogpost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/blogpost",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blogpost",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blogpost"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/blogpost/66a262b07f1639df17c7c448",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blogpost/66a3465286e5ee976978ca73",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blogpost",
+								"66a3465286e5ee976978ca73"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/blogpost/66a3465286e5ee976978ca73",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blogpost/66a3465286e5ee976978ca73",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blogpost",
+								"66a3465286e5ee976978ca73"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/blogpost/66a3465286e5ee976978ca73",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Post 1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "content",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category_id",
+									"value": "66a0e07c7964f7ba16632b92",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/blogpost/66a3465286e5ee976978ca73",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blogpost",
+								"66a3465286e5ee976978ca73"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Comment",
+			"item": [
+				{
+					"name": "http://localhost:3000/postcomment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YTBmYjUwZmJjNTFlYjEwMDM4MzEwNSIsImlhdCI6MTcyMTk5NzE3MywiZXhwIjoxNzIyMDAwNzczfQ.IdDQfU_iyMqRgyq2QvkegxBZ1UDqSi2ixMJTKggExx0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "content",
+									"value": "Comment 1",
+									"type": "text"
+								},
+								{
+									"key": "post_id",
+									"value": "66a388119341091f8e89fddc",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/postcomment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"postcomment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/postcomment/66a3a457b88b825549361544",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/postcomment/66a3a457b88b825549361544",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"postcomment",
+								"66a3a457b88b825549361544"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/postcomment/66a3a039743ad9762492b58e",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "content",
+									"value": "updated",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/postcomment/66a3a039743ad9762492b58e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"postcomment",
+								"66a3a039743ad9762492b58e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/postcomment/66a3a039743ad9762492b58e",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/postcomment/66a3a039743ad9762492b58e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"postcomment",
+								"66a3a039743ad9762492b58e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/postcomment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/postcomment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"postcomment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Liked",
+			"item": [
+				{
+					"name": "http://localhost:3000/postliked",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/postliked",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"postliked"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/postliked/66a3b414df5af0dde8f38ec8",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/postliked/66a3b414df5af0dde8f38ec8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"postliked",
+								"66a3b414df5af0dde8f38ec8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/postliked",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/postliked",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"postliked"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
